@@ -1,9 +1,10 @@
-var MovieListEntry = () => (
+var MovieListEntry = (props) => {
+  return (
   <div>
-  Movie Name Here
+  {props.movie.title}
   </div>
   );
-
+};
 MovieListEntry.propTypes = {
   movie: React.PropTypes.object.isRequired
 };
